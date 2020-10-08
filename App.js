@@ -118,7 +118,7 @@ import Header  from './src/Components/Header';
 
 const App = ()=> (
 
-<Header/>
+<Header headerText={'Albums'}/>
 
 );
 export default App;

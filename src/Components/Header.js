@@ -4,14 +4,14 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 //making a component
-const Header = () => {
+const Header = (props) => {
 
     const { textStyle, viewStyle } = styles;
 
     return (
         <View style={viewStyle}>
 
-            <Text style={textStyle}>Albums!!!!!</Text>
+    <Text style={textStyle}>{props.headerText}</Text>
         </View>
     );
 };
@@ -21,7 +21,7 @@ const Header = () => {
 
 const styles = {
     viewStyle: {
-        backgroundColor: '#F8F8F8',
+        backgroundColor: '#00ced1',
         justifyContent:'center',
         alignItems:'center',
         height:60,
